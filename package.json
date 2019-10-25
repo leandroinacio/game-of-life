@@ -1,0 +1,16 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "Small project to do some exercises about TDD and Jest",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll"
+  },
+  "author": "Leandro Souza",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
