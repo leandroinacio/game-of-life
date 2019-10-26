@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>It's the best game of life thou shall see</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>It's the best game of life thou shall see</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js" type="module"></script>
 </head>
 <body>
-    
+  <main class="container">
+    <h1>The Game of life</h1>
+    <header class="row">
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#rules" role="button" aria-expanded="false" aria-controls="rules">
+          The Rules
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#game" aria-expanded="false" aria-controls="game">
+          The Game
+        </button>
+      </p>
+    </header>
+    <article class="row">
+      <div class="collapse" id="rules">
+        <div class="card card-body">
+          <p>Enter the number of fields to generate a square board.
+          These fields can be alive or dead.
+          You choose an initial setup, rules are applied to see what happens in the next generation.
+          The game continues until:</p>
+          <p>
+            1. All fields are dead.
+            2. No fields change from one generation to another.
+            3. The next and previous patterns keeps changing back and forth.
+          </p>
+          <p>
+            Births: Each dead cell adjacent to exactly three live neighbors will become live in the next generation.
+          </p>
+          <p>
+            Death by isolation: Each live cell with one or fewer live neighbors will die in the next generation.
+          </p>
+          <p>
+            Death by overcrowding: Each live cell with four or more live neighbors will die in the next generation.
+          </p>
+          <p>
+              Survival: Each live cell with either two or three live neighbors will remain alive for the next generation.
+          </p>
+        </div>
+      </div>
+      <div class="collapse" id="game">
+        <div class="card card-body">
+          Game.
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="container">
+    <small>Made by <a href="https://www.linkedin.com/in/leinaciosouza/">Leandro Souza</a></small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

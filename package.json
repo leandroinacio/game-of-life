@@ -11,6 +11,16 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^24.9.0"
+  },
+  "jest": {
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
   }
 }
